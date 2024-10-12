@@ -2,12 +2,12 @@
 
 [ext_resource path="res://Scenes/BTN/BTN.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/FRAME/FRAME.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Fonts/MiniPixel.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/MiniPixel.tres" type="FontFile" id=3]
 
 [node name="BTN" type="TextureButton"]
 anchor_right = 0.239583
 anchor_bottom = 0.185185
-rect_min_size = Vector2( 230, 100 )
+custom_minimum_size = Vector2( 230, 100 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true,
@@ -15,12 +15,12 @@ __meta__ = {
 }
 
 [node name="FRAME" parent="." instance=ExtResource( 2 )]
-margin_top = 0.0
+offset_top = 0.0
 
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = ExtResource( 3 )
+theme_override_fonts/font = ExtResource( 3 )
 text = "BTN"
 align = 1
 valign = 1

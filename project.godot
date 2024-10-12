@@ -6,46 +6,13 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "TextureButton",
-"class": "BTN",
-"language": "GDScript",
-"path": "res://Scenes/BTN/BTN.gd"
-}, {
-"base": "VBoxContainer",
-"class": "BTNGrid",
-"language": "GDScript",
-"path": "res://Scenes/BTNGrid/BTNGrid.gd"
-}, {
-"base": "Control",
-"class": "FRAME",
-"language": "GDScript",
-"path": "res://Scenes/FRAME/FRAME.gd"
-}, {
-"base": "BTN",
-"class": "LABEL",
-"language": "GDScript",
-"path": "res://Scenes/LABEL/LABEL.gd"
-}, {
-"base": "VBoxContainer",
-"class": "TriviaGrid",
-"language": "GDScript",
-"path": "res://Scenes/TriviaGrid/TriviaGrid.gd"
-} ]
-_global_script_class_icons={
-"BTN": "",
-"BTNGrid": "",
-"FRAME": "",
-"LABEL": "",
-"TriviaGrid": ""
-}
+config_version=5
 
 [application]
 
 config/name="Trivia"
 run/main_scene="res://Scenes/Main/Main.tscn"
+config/features=PackedStringArray("4.3")
 config/icon="res://icon.png"
 
 [autoload]
@@ -55,10 +22,9 @@ G="*res://Singletons/G.gd"
 
 [display]
 
-window/size/width=450
-window/size/height=310
+window/size/viewport_width=450
+window/size/viewport_height=310
 window/stretch/mode="viewport"
-window/stretch/aspect="keep"
 
 [physics]
 
@@ -66,4 +32,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/defaults/default_environment="res://default_env.tres"

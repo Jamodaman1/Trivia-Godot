@@ -2,9 +2,9 @@ extends VBoxContainer
 
 class_name TriviaGrid
 
-onready var question_label: LABEL = $QuestionLabel;
-onready var btn_grid : BTNGrid = $BTNGrid;
-onready var money_label : LABEL = $MoneyLabel;
+@onready var question_label: LABEL = $QuestionLabel;
+@onready var btn_grid : BTNGrid = $BTNGrid;
+@onready var money_label : LABEL = $MoneyLabel;
 
 var money := 0;
 

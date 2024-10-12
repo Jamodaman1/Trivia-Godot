@@ -2,10 +2,10 @@ extends TextureButton
 
 class_name BTN
 
-const CORRECT_ANSWER_COLOR := Color.green;
-const INCORRECT_ANSWER_COLOR := Color.red;
-const HIGHLIGHT_COLOR := Color.cyan;
-const NORMAL_COLOR := Color.white;
+const CORRECT_ANSWER_COLOR := Color.GREEN;
+const INCORRECT_ANSWER_COLOR := Color.RED;
+const HIGHLIGHT_COLOR := Color.CYAN;
+const NORMAL_COLOR := Color.WHITE;
 
 var clickable := true;
 var hoverable := true;
@@ -51,9 +51,9 @@ func _on_pressed() -> void:
 			G.end_game();
 
 func _ready() -> void:
-	connect("mouse_entered",self, "_on_mouse_entered");
-	connect("mouse_exited", self, "_on_mouse_exited");
-	connect("pressed",self,"_on_pressed");
+	connect("mouse_entered", Callable(self, "_on_mouse_entered"));
+	connect("mouse_exited", Callable(self, "_on_mouse_exited"));
+	connect("pressed", Callable(self, "_on_pressed"));
 
 
 

@@ -16,4 +16,4 @@ __meta__ = {
 }
 
 [node name="TriviaGrid" parent="." instance=ExtResource( 2 )]
-margin_right = 0.0
+offset_right = 0.0
